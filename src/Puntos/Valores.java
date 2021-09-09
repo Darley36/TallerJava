@@ -16,4 +16,17 @@ public class Valores {
         }
         return numero;
     }
+
+    public String metodoDia(Scanner teclado){
+        String dia="";
+        try {
+            System.out.println("Por favor ingresa un dia sea : LUNES-MARTES-MIERCOLES-JUEVES-VIERNES-SABADO-DOMINGO");
+            dia = (teclado.nextLine());
+            return dia;
+        }catch (Exception e){
+            System.out.println("Solo se aceptan caracteres (letras)!");
+            dia=metodoDia(myObj);
+        }
+        return dia;
+    }
 }

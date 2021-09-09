@@ -1,5 +1,6 @@
 package Puntos;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class PuntosGenerales_3_al_15 {
@@ -22,7 +23,83 @@ public class PuntosGenerales_3_al_15 {
                 " tiene un iva de: " + iva + "\n" + " El precio final corresponde a: "+(num+num*iva));
     }
 
+    //punto5
+    public void Numeros_pares_impares(){
+        int x =1;
+        String numP = "";
+        String numI = "";
+        System.out.println("Estos son los numeros impares: \n");
+        while (x<=100){
+            if(x % 2 != 0){
+                numI = numI+" "+x;
+            }else{
+                numP = numP+" "+x;
+            }
+            x++;
+        }
+        System.out.println(numI);
+        System.out.println("Estos son los numeros pares: \n");
+        System.out.println(numP);
+    }
 
+    //Punto 6
+    public void Numeros_pares_impares2(){
+        String numP = "";
+        String numI = "";
+        System.out.println("Estos son los numeros impares: \n");
+        for (int i = 1; i <= 100 ; i++) {
+            if(i % 2 != 0){
+                numI = numI+" "+i;
+            }else{
+                numP = numP+" "+i;
+            }
+        }
+        System.out.println("Estos son los numeros impares: \n");
+        System.out.println(numI);
+        System.out.println("Estos son los numeros pares: \n");
+        System.out.println(numP);
+    }
 
+    //punto7
+    public void Pedir_Numero(){
+        double num = 0;
+        int x = 0;
+        do{
+            if (x == 1) System.out.println("El numero no puede ser menor a cero");
+            x ++;
+            num = values.metodoNumero(myObj);
+        }while (num < 0);
+        System.out.println("El numero ingresado fue: "+num);
+    }
+
+    //punto8
+    public void Dia_semana(){
+        String dia = values.metodoDia(myObj).toLowerCase(Locale.ROOT);
+        switch (dia){
+            case "lunes":
+                System.out.println("Es un dia laboral");
+                break;
+            case "martes":
+                System.out.println("Es un dia laboral");
+                break;
+            case "miercoles":
+                System.out.println("Es un dia laboral");
+                break;
+            case "jueves":
+                System.out.println("Es un dia laboral");
+                break;
+            case "viernes":
+                System.out.println("Es un dia laboral");
+                break;
+            case "sabado":
+                System.out.println("No es un dia laboral");
+                break;
+            case "domingo":
+                System.out.println("No es un dia laboral");
+                break;
+            default:
+                System.out.println("No se ingreso un dia valido");
+        }
+    }
 
 }
