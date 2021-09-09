@@ -25,7 +25,7 @@ public class main {
                 entrar=false;
                 break;
             }
-            if (opcion > 0 && opcion < 12) {
+            if (opcion > 0 && opcion < 18) {
                 // switch case
                 switch (opcion){
                     //numero mayor estatico
@@ -61,8 +61,25 @@ public class main {
                     case 10:
                         PG.Quitar_Espacios();
                         break;
+                    case 11:
+                        PG.Longitud_Cadena();
+                        break;
+                    //Me falta el punto 12
+                    case 12:
+                        PG.Diferenci_Caracteres();
+                        break;
+                    case 13:
+                        PG.Obtener_Fecha();
+                        break;
+                    case 14:
+                        PG.Saltar_Numeros();
+                        break;
+                    case 15:
+                        PG.Mostrar_Menu();
+                        break;
                     default:
                         System.out.println("No se pudo ingresar");
+
                 }
             }else{
                 System.out.println("Opcion incorrecta");
@@ -74,7 +91,8 @@ public class main {
         System.out.println("1 - NUMERO MAYOR ESTATICO \n2 - NUMERO MAYOR \n3 - AREA DE UN CIRCULO \n4 - PRECIO FINAL");
         System.out.println("5 - NUMERO PARES E IMPARES \n6 - NUMERO PARES E IMPARES(CICLO FOR)");
         System.out.println("7 - SOLICITAR NUMERO MAYOR A CERO \n8 - DIAS LABORALES \n8 - REEMPLAZAR CARACTER (A)");
-        System.out.println("10 - QUITAR ESPACIOS EN BLANCO \n8 - DIAS LABORALES \n8 - REEMPLAZAR CARACTER (A)");
+        System.out.println("10 - QUITAR ESPACIOS EN BLANCO \n11 - CONTAR LONGITUD \n12 - DIFERENCIAR PALABRAS)");
+        System.out.println("13 - ONTENER FECHA \n14 - SLATOS DE 2 EN 2 \n15 - MENU)");
         System.out.println("Por favor seleccione la opcion deseada");
         System.out.println("Para salir preciones el numero 0");
     }

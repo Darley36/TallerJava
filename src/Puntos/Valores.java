@@ -42,4 +42,36 @@ public class Valores {
         }
         return frases;
     }
+
+    public int[] ContarCaracter(String frase){
+        int [] vocales = new int[5];
+        char temp;
+        for (int i = 0; i < frase.length(); i++) {
+
+            temp = frase.charAt(i);
+            if (temp == 'a') {
+                vocales[0]++;
+            }
+            if (temp == 'e') {
+                vocales[1]++;
+            }
+            if (temp == 'i') {
+                vocales[2]++;
+            }
+            if (temp == 'o') {
+                vocales[3]++;
+            }
+            if (temp == 'u') {
+                vocales[4]++;
+            }
+        }
+        return  vocales;
+    }
+
+    public void Menu(){
+        System.out.println("**********GESTION CINEMATOGRAFICA************");
+        System.out.println("1 - NUEVO ACTOR \n2 - BUSCAR ACTOR \n3 - ELIMINAR ACTOR \n4 - MODIFICAR ACTOR");
+        System.out.println("5 - VER TODOS LOS ACTORES \n6 - VER PELICULAS DE LOS ACTORES");
+        System.out.println("7 - VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES \n8 - SALIR ");
+    }
 }
