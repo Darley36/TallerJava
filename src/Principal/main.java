@@ -15,6 +15,7 @@ public class main {
 
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
+        PuntosGenerales_3_al_15 PG = new PuntosGenerales_3_al_15();
 
         boolean entrar=true;
         do {
@@ -35,6 +36,12 @@ public class main {
                         MayorVariables M = new MayorVariables();
                         M.mayorDos();
                         break;
+                    case 3:
+                        PG.Area_circulo();
+                        break;
+                    case 4:
+                        PG.Precio_IVA();
+                        break;
                     default:
                         System.out.println("No se pudo ingresar");
                 }
@@ -46,6 +53,7 @@ public class main {
     public static void menu() {
         System.out.println("**********TALLER SOFKA************");
         System.out.println("1 - NUMERO MAYOR ESTATICO \n2 - NUMERO MAYOR \n3 - AREA DE UN CIRCULO \n4 - PRECIO FINAL");
+        System.out.println("5 - NUMERO PARES E IMPARES \n6 - NUMERO PARES E IMPARES(CICLO FOR)");
         System.out.println("Por favor seleccione la opcion deseada");
         System.out.println("Para salir preciones el numero 0");
     }
