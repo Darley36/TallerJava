@@ -102,4 +102,21 @@ public class PuntosGenerales_3_al_15 {
         }
     }
 
+    //punto 9
+    public void Reemplazar_caracter(){
+        String texto = "La sonrisa sera la mejor arma contra la tristeza";
+        String newTexto = texto.replace("a","e");
+        String frase = values.Frase(myObj);
+
+        System.out.println(newTexto+". "+frase);
+    }
+
+    //punto 10
+    public void Quitar_Espacios(){
+        String frase = values.Frase(myObj);
+        String newFrase = frase.replaceAll("\\s+","");
+        System.out.println("Esta es su frase sin espacios \n \n");
+        System.out.println(newFrase);
+    }
+
 }

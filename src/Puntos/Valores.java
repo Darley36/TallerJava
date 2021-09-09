@@ -29,4 +29,17 @@ public class Valores {
         }
         return dia;
     }
+
+    public String Frase(Scanner teclado){
+        String frases="";
+        try {
+            System.out.println("Por favor ingresa alguna frase");
+            frases = (teclado.nextLine());
+            return frases;
+        }catch (Exception e){
+            System.out.println("Hubo un error");
+            frases=Frase(myObj);
+        }
+        return frases;
+    }
 }
