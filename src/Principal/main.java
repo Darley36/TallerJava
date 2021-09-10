@@ -2,6 +2,7 @@ package Principal;
 import javax.swing.*;
 import java.util.Scanner;
 
+import Punto16.EjecutablePersona;
 import Puntos.*;
 
 public class main {
@@ -76,6 +77,10 @@ public class main {
                         break;
                     case 15:
                         PG.Mostrar_Menu();
+                        break;
+                    case 16:
+                        EjecutablePersona EP = new EjecutablePersona();
+                        EP.Pedir_datos();
                         break;
                     default:
                         System.out.println("No se pudo ingresar");
