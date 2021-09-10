@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.util.Scanner;
 
 import Punto16.EjecutablePersona;
+import Punto17.EjecutableElectrodomestico;
 import Puntos.*;
 
 public class main {
@@ -82,6 +83,10 @@ public class main {
                     case 16:
                         EjecutablePersona EP = new EjecutablePersona();
                         EP.Pedir_datos();
+                        break;
+                    case 17:
+                        EjecutableElectrodomestico EE = new EjecutableElectrodomestico();
+                        EE.main();
                         break;
                     default:
                         System.out.println("No se pudo ingresar");
