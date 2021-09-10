@@ -16,12 +16,13 @@ public class main {
 
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
+        Valores v = new Valores();
         PuntosGenerales_3_al_15 PG = new PuntosGenerales_3_al_15();
 
         boolean entrar=true;
         do {
             menu();
-            int opcion = myObj.nextInt();
+            int opcion = (int) v.metodoNumero(myObj);
             if (opcion == 0) {
                 entrar=false;
                 break;
