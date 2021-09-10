@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import Punto16.EjecutablePersona;
 import Punto17.EjecutableElectrodomestico;
+import Punto18.EjecutableSerieVideojuego;
 import Puntos.*;
 
 public class main {
@@ -28,7 +29,7 @@ public class main {
                 entrar=false;
                 break;
             }
-            if (opcion > 0 && opcion < 18) {
+            if (opcion > 0 && opcion < 19) {
                 // switch case
                 switch (opcion){
                     //numero mayor estatico
@@ -87,6 +88,10 @@ public class main {
                     case 17:
                         EjecutableElectrodomestico EE = new EjecutableElectrodomestico();
                         EE.main();
+                        break;
+                    case 18:
+                        EjecutableSerieVideojuego ESV = new EjecutableSerieVideojuego();
+                        ESV.main();
                         break;
                     default:
                         System.out.println("No se pudo ingresar");

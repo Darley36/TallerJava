@@ -1,6 +1,6 @@
 package Punto18;
 
-public class Serie {
+public class Serie implements Entregable{
 
     private String titulo;
     private int Num_Temporadas;
@@ -78,5 +78,32 @@ public class Serie {
                 ", genero='" + genero + '\'' +
                 ", creador='" + creador + '\'' +
                 '}';
+    }
+
+    @Override
+    public void devolver() {
+        this.entregado = false;
+    }
+
+    @Override
+    public void entregar() {
+        this.entregado = true;
+    }
+
+    @Override
+    public boolean isEntregado() {
+        return this.entregado;
+    }
+
+    @Override
+    public int compareTo(Object a) {
+        Serie serieComparacion = (Serie)a;
+        int estado = -1;
+
+        if(this.Num_Temporadas > serieComparacion.Num_Temporadas)
+            estado = 1;
+        else if(this.Num_Temporadas == serieComparacion.Num_Temporadas)
+            estado = 0;
+        return estado;
     }
 }
