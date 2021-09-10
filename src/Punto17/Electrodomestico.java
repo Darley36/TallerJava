@@ -75,10 +75,10 @@ public class Electrodomestico {
         }
     }
 
-    private double precioFinal(double precio_base, char letra, double peso){
-        double preciototal = precio_base;
-        preciototal = preciototal+aumentoConsumo(letra);
-        preciototal = preciototal+aumentoTamaño(peso);
+    public double precioFinal(){
+        double preciototal = this.precio_base;
+        preciototal = preciototal+aumentoConsumo(this.consumo_energetico);
+        preciototal = preciototal+aumentoTamaño(this.peso);
         return preciototal;
     }
 
