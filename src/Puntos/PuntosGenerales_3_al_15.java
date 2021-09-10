@@ -140,7 +140,7 @@ public class PuntosGenerales_3_al_15 {
         if (pal1 == pal2){
             System.out.println("Estas palabras son iguales");
         }else{
-            //System.out.println(StringUtils);
+            System.out.println("Estas palabras no son iguales");
         }
 
     }

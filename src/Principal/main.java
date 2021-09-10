@@ -108,7 +108,8 @@ public class main {
         System.out.println("5 - NUMERO PARES E IMPARES \n6 - NUMERO PARES E IMPARES(CICLO FOR)");
         System.out.println("7 - SOLICITAR NUMERO MAYOR A CERO \n8 - DIAS LABORALES \n8 - REEMPLAZAR CARACTER (A)");
         System.out.println("10 - QUITAR ESPACIOS EN BLANCO \n11 - CONTAR LONGITUD \n12 - DIFERENCIAR PALABRAS)");
-        System.out.println("13 - ONTENER FECHA \n14 - SLATOS DE 2 EN 2 \n15 - MENU)");
+        System.out.println("13 - ONTENER FECHA \n14 - SLATOS DE 2 EN 2 \n15 - MENU");
+        System.out.println("16 - IMC \n17 - ELECTRODOMESTICOS \n18 - SERIES VIDEOJUEGOS");
         System.out.println("Por favor seleccione la opcion deseada");
         System.out.println("Para salir preciones el numero 0");
     }

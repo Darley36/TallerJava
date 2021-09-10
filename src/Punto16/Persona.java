@@ -14,14 +14,14 @@ public class Persona {
 
 
     public Persona() {
-        this.getDNI();
+        generaDNI();
     }
 
     public Persona(String nombre, int edad, char sexo) {
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = sexo;
-        this.getDNI();
+        generaDNI();
     }
 
     public Persona(String nombre, int edad, char sexo, double peso, double altura, String DNI) {
@@ -31,7 +31,7 @@ public class Persona {
         this.peso = peso;
         this.altura = altura;
         this.DNI = DNI;
-        this.getDNI();
+        generaDNI();
     }
 
     public String getNombre() {
